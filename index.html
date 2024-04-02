@@ -144,7 +144,121 @@
       </div>
     </section>
 
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>How Our Love Began</span>
+            <h2>Our Story</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat harum suscipit unde debitis, dolorum odio!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image" style="background-image: url(img/first-meet.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>First Meet</h3>
+                    <span>1 Januari 2030</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis inventore asperiores eius ipsam dolorum reiciendis?</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(img/get-serious.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Get Serious</h3>
+                    <span>1 April 2030</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quibusdam quisquam pariatur voluptatem officiis eveniet tempora consequatur nemo?</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image" style="background-image: url(img/engagemnet.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Engagement</h3>
+                    <span>1 juli 2030</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam tempore asperiores est!</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image" style="background-image: url(img/wedding.jpg)"></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Wedding</h3>
+                    <span>5 Agustus 2030</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor tempore maxime fugiat cumque doloribus doloremque ex velit quas nulla rerum.</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Our Story Memory</span>
+          <h2>Gallery</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, perspiciatis.</p>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+          <div class="col mt-3">
+            <a href="img/couple.jpg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/1.jpg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/couple2.jpeg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/2.jpeg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/couple3.jpg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/3.jpg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/couple4.jpg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/4.jpg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/couple5.jpg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/5.jpg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/couple6.jpg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/6.jpg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a href="img/couple7.jpeg" data-toggle="lightbox" data-caption="Sidik & Jodohnya" data-gallery="my-gallery">
+              <img src="img/thumbnail/7.jpeg" alt="Pasangan" class="img-fluid w-100 rounded" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script>
       simplyCountdown(`.simply-countdown`, {
         year: 2030, // required
@@ -158,6 +272,19 @@
           minutes: { singular: "Menit", plural: "Menit" },
           seconds: { singular: "Detik", plural: "Detik" },
         },
+      });
+    </script>
+
+    <script>
+      const stickyTop = document.querySelector(`.sticky-top`);
+      const offCanvas = document.querySelector(`.offcanvas`);
+
+      offCanvas.addEventListener(`show.bs.offcanvas`, function () {
+        stickyTop.style.overflow = `visible`;
+      });
+
+      offCanvas.addEventListener(`hidden.bs.offcanvas`, function () {
+        stickyTop.style.overflow = `hidden`;
       });
     </script>
   </body>
